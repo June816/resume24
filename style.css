@@ -1,0 +1,104 @@
+* { font-family: 'Spoqa Han Sans Neo', 'sans-serif'; }
+.normal		{ font-weight: 400 }
+.bold		{ font-weight: 700 }
+.bolder		{ font-weight: 800 }
+.light		{ font-weight: 300 }
+
+.gradient {
+    background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.text-blue {
+    color: #005bea;
+}
+
+.h1 {
+    font-size: 48px;
+}
+
+.h2 {
+    font-size: 27px;
+}
+
+.h3 {
+    font-size: 28px;
+}
+
+.f-12 {
+    font-size: 12px;
+}
+
+.f-16 {
+    font-size: 16px;
+}
+
+.f-18 {
+    font-size: 18px;
+}
+
+.f-24 {
+    font-size: 24px;
+}
+
+.mb-4 {
+    margin-bottom: 4px;
+}
+
+.mb-8 {
+    margin-bottom: 8px;
+}
+
+.mb-16 {
+    margin-bottom: 32px;
+}
+
+.grey {
+    color: lightslategray;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.horizon {
+    display: flex;
+
+    .first {
+        flex-grow: 1;
+    }
+
+    .second {
+        flex-grow: 4;
+    }
+
+
+    .chip {
+        background-color: #00c6fb;
+        color: white;
+
+        height: fit-content;
+        font-size: 13px;
+
+        margin-right: 3px;
+        border-radius: 3px;
+
+        padding: 2px 5px 2px 5px;
+    }
+}
+
+hr {
+    background:#eaeaea;
+    height:1px;
+    border:0;
+}
+
+.container {
+    margin: 60px;
+}
+
+.section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
