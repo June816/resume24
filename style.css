@@ -108,6 +108,17 @@ body {
 
         padding: 2px 5px 2px 5px;
     }
+
+    &.align-bottom {
+        flex-direction: row;
+        gap: 10px;
+        align-items: flex-end;
+
+        .desc {
+            font-size: 14px;
+            padding-bottom: 6px;
+        }
+    }
 }
 
 hr {
@@ -125,12 +136,6 @@ hr {
 .section {
     margin-top: 100px;
     margin-bottom: 100px;
-
-    .top {
-        display: flex;
-        flex-direction: column;
-        align-self: flex-end;
-    }
 }
 
 .title {
