@@ -6,7 +6,7 @@ body {
 .bolder		{ font-weight: 700 }
 
 .text-blue {
-    color: #005bea !important;
+    color: #005bea;
 }
 
 .h1 {
@@ -61,8 +61,19 @@ body {
     margin-bottom: 32px;
 }
 
+.bg-blue {
+    background-color: #005bea;
+}
+
+.image {
+    border-radius: 50%;
+    width: 30%;
+    height: 30%;
+    margin-right: 5%;
+}
+
 .grey {
-    color: lightslategray;
+    color: #dedede;
 }
 
 .italic {
@@ -102,10 +113,28 @@ hr {
 }
 
 .container {
-    margin: 60px;
+    display: block;
+    margin: auto;
+    width: 90vw;
 }
 
 .section {
     margin-top: 100px;
     margin-bottom: 100px;
+
+    .top {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-end;
+    }
+}
+
+.title {
+    color:#005bea;
+    font-size: 48px;
+}
+
+.desc {
+    font-size: 18px;
+    font-weight: 300;
 }
