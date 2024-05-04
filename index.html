@@ -14,8 +14,8 @@
     <div class="container">
         <div class="section mb-16">
             <div class="h1 title bolder mb-16">사용자 중심<br>웹 서비스를 제공하는<br>개발자 신혜지입니다.</div>
-            <div class="f-16">새로운 기술을 적극적으로 학습하여 기존 소스와 개발 환경의 개선에 도전합니다.</div>
-            <div class="f-16 mb-16">성장을 위해 성실하게 노력하고, 팀원 간 원활한 소통을 통해 최적의 코드를 작성하고자 합니다.</div>
+            <div class="f-16">문제를 해결하기 위한 학습에 거리낌 없이<br>적극적으로 기존 소스와 개발 환경의 개선에 도전합니다.</div>
+            <div class="f-16 mb-16">개인의 발전이 팀의 발전에 기여함을 믿습니다. <br>함께 성장하고 지식을 활발하게 공유할 수 있는 환경을 선호합니다.</div>
             <div class="chip-container">
                 <div class="chip">
                     javascript
@@ -68,70 +68,121 @@
             <div class="h3 bolder text-blue">Work Experience</div>
             <hr class="mb-16" />
 
-            <div class="horizon">
-                <div class="first">
+            <div class="horizon row-gap">
+                <div>
                     <div class="h2 mb-8 bold">
                         아정당
                     </div>
-                    <div class="grey mb-4 italic f-16">
+                    <div class="grey mb-4 italic f-12">
                         Frontend Developer
                     </div>
-                    <div class="grey italic f-16">
+                    <div class="grey italic f-12">
                         2022.05~2024.02
                     </div>
-            </div>
+                </div>
 
 
-                <div class="second">
+                <div>
                     <div>
-                        <div class="mb-16 light">
-                            <div class="bolder">
-                                CRM 고객 및 연관 기업 관리 서비스
+                        <div class="mb-16">
+                            <div class="bolder mb-8 h4 horizon">
+                                <div class="pre-style"></div>
+                                고객, 연관 기업 및 상품 통합 관리 CRM 웹 서비스
                             </div>
                             <div>
-                                - RESTful API와 연동한 Vue.js 기반 프론트엔드 개발 
+                                상품별 Entity의 수정과 확장이 잦은 비즈니스 특성상 효율적인 상태 관리를 위하여 <span class="bolder">Vuex Store 기능</span>을 사용하였습니다.
                             </div>
+                            <br>
                             <div>
-                                - Vuex 상태 관리 최적화 
+                                브라우저에서 Entity의 상태를 추적하기 용이하도록 
+                                <span class="bolder">디자인 패턴</span>을 학습하였습니다.
+                                대표적으로 사용한 패턴은 데코레이터와 프록시입니다.
+                                모든 객체에서 공통적으로 사용되는 PK Entity로만 이뤄진 객체를 인터페이스로 작성하고, 
+                                하위 객체에서는 유연한 확장 및 수정이 가능하도록 서브 클래스를 구현하였습니다.
                             </div>
+                            <br>
                             <div>
-                                - Quasar 프레임워크로 반응형 웹 애플리케이션 개발
+                                객체와 메소드의 유형이 다양해지고 세분화될수록 <span class="bolder">클린 코드 문화</span>의 필요성이 커졌고
+                                이를 위해 작명 컨벤션, Prettier 옵션 설정에 적극적으로 참여하였습니다.
                             </div>
+                            <br>
                             <div>
-                                - Datadog을 이용하여 장애 추적 및 이슈 대응
+                                모바일 접속을 고려하지 않은 PC 지원 웹서비스이지만 해상도와 무관하게 온전한 클라이언트 환경을 제공하기 위하여
+                                Quasar 프레임워크의 API를 이용하여 <span class="bolder">반응형 웹 애플리케이션</span>을 개발하였습니다. 
                             </div>
+                            <br>
+                                <span class="bolder">HTTP 프로토콜 기반 브라우저 간 통신 기능</span>을 구현하였습니다. 
+                                사용자가 로그아웃하여 헤더의 토큰이 만료되기 전까지 브라우저는 서비스에 필요한 데이터를 저장하고 있었으며,
+                                사용자가 접속한 경로와 무관하게 이 데이터를 신속하게 조회하거나 수정할 수 있었습니다. 
                             <div>
-                                - 외부 IP 접속 차단 후 프록시 서버로 우회 
+                            <br>
+                                런칭 이후 발생한 장애의 원인을 분석하기 위해 <span class="bolder">datadog rum, replay</span>을 활용하는 방법을 학습하고 이를 이용하는 방법을 팀원과 공유하였습니다.
+                                또한 분석한 원인을 바탕으로 즉각적인 대응이 가능하도록 담당자에게 report하였고,
+                                직접 수정이 필요한 작업에 대비하기 위해 hotfix를 위한 프로그래밍 역량을 강화하였습니다.
+                            </div>
+                            <br>
+                            <div>
+                                <span class="bolder">Node 기반 API 성능 테스트 코드</span>를 작성하였습니다. 
+                                테스트 환경에서 웹서버와 통신하기 위해 Express를 이용하였고, 다양한 테스트 케이스에 대응하기 위하여 
+                                개발, 스테이징, 운영 등 여러 Port에서 실행할 수 있도록 테스트 변수를 설정할 수 있게 커맨드 기반으로 구현하였습니다.
+                                같은 DB를 사용하는 두 개의 웹 서비스에서 병렬 성능 테스트, 초당 최대 요청 횟수, 요청별 응답 지연 시간 계산 등 
+                                테스트 결과를 메신저 알림으로 확인할 수 있도록 Slack API를 연동하였습니다.
+                            </div>
+                            <br>
+                            <div>
+                                <span class="bolder">운영 서버의 자동 배포와 통합 관리를 위한 CI/CD 환경</span>을 구축하였습니다. 
+                                AWS S3에 등록된 운영 서버를 CloudFront에서 자체 도메인 설정하고, AWS에서 제공하는 변수를 Bitbucket 배포 pipeline 스크립트인
+                                yml에서 불러올 수 있도록 하고, master 브랜치가 갱신되면 자동으로 배포되는 기능을 구현하였습니다. 
+                                배포에 실패한 경우 에러 로그를 확인하여 즉각적으로 대응할 수 있게 하였고, 버전 관리를 위해 Git Tag를 사용하였습니다.
                             </div>
                         </div>
 
                         <div class="mb-16">
-                            <div class="bolder">
+                            <div class="bolder mb-8 h4 horizon">
+                                <div class="pre-style"></div>
                                 회사 PR 및 채용 사이트
                             </div>
                             <div>
-                                - 프로젝트 초기 셋팅 
+                                퍼블리셔, FE 등 다양한 인력이 협업할 수 있게 사내 기술 스택에 무합하는 <span class="bolder">프로젝트 초기 환경 세팅</span>을 맡았습니다.
+                                작업에 참여한 인원이 개발 환경 세팅에 어려움을 겪을 때, 
+                                package.json 파일을 읽어 로컬 서버를 실행하는 방법과 라이브러리들의 버전을 관리하는 방법 등에 대한 내용을 지원하였습니다. 
                             </div>
+                            <br>
                             <div>
-                                - 동적 이미지 및 동영상 로드를 위한 CDN 구현
+                                주 사용 프레임워크는 Vue이며, <span class="bolder">사내 공용 UI 컴포넌트 개발</span>에 Yarn과 원격 레포지토리 기술인 Nexus를 이용하였습니다.
+                                공용 컴포넌트의 지속적인 개발 및 관리를 위해 Yarn Publish 가이드를 커맨드 기반으로 작성 후 팀원에게 공유하였습니다. 
                             </div>
+                            <br>
                             <div>
-                                - 임직원의 요구에 맞춘 기존 소스 코드 유지 보수
+                                동적 이미지 및 동영상 로드를 위해 AWS S3로 <span class="bolder">CDN 서버</span>를 구축하였습니다.
+                                파일의 단순한 교체처럼 코드가 필요하지 않은 업무에 개발 인력이 투입되는 것을 방지하기 위하여
+                                비개발 인력이 S3 버킷의 파일을 직접 수정하거나 다운로드할 수 있도록 <span class="bolder">작명 규칙</span>을 설정하였습니다.
+                            </div>
+                            <br>
+                            <div>
+                                임직원 요구에 맞게 수정이 필요한 UI를 CSS로 구현할 것인지 디자인으로 구현할 것인지
+                                끊임없이 소통하며 상황에 맞는 방법을 채택하였습니다. 
                             </div>
                         </div>
 
                         <div>
-                            <div class="bolder">
+                            <div class="bolder mb-8 h4 horizon">
+                                <div class="pre-style"></div>
                                 고객 이벤트 신청 페이지
                             </div>
                             <div>
-                                - Pinia 상태 관리 최적화
+                                비정상적인 접근을 방지하기 위해 <span class="bolder">HTTP 상태코드와 URI 규칙</span>을 적극적으로 활용하였습니다. 
+                                서비스가 지원하지 않는 경로로 입장할 경우 최초 페이지로 이동하거나 웹세션이 저장한 데이터를 초기화함으로써 
+                                클라이언트 임의의 abusing을 대비하였습니다. 
                             </div>
+                            <br>
                             <div>
-                                - 고객 참여율 추적을 위한 GA 연동
+                                <span class="bolder">Pinia와 웹세션을 통한 상태 관리</span>로 사용자 인증 시 작성한 정보로 모든 API의 인증이 가능하여 사용자 경험을 최적화하였습니다.
                             </div>
+                            <br>
                             <div>
-                                - AWS CI/CD 환경 구축 
+                                고객 참여율 추적을 위한 <span class="bolder">GTM, GA4 연동</span>으로 타 부서 연관 업무에 기여하였습니다.
+                                임원 보고를 위한 데이터 활용법을 문서로 작성하고 공유하였습니다. 
                             </div>
                         </div>
                     </div>
@@ -146,63 +197,46 @@
             <hr class="mb-16" />
 
 
-            <div class="h2 bold mb-8">
+            <div class="h4 bolder mb-8">
                 Vue.js를 활용한 프론트엔드 개발
             </div>
             <div class="mb-16">
                 <div>
-                    - 커맨드와 일부 GUI를 이용하여 Git 브랜치 추적으로 형상 관리
-                </div>
-                <div>
-                    - 다양한 브라우저 기반 반응형 웹 애플리케이션 화면 개발
-                </div>
-                <div>
-                    - 컴포넌트 기반 설계를 통해 코드 재사용성 도모
+                    크롬, 사파리 등 다양한 클라이언트 환경에 대비하기 위한 반응형 웹 애플리케이션을 개발하였습니다. 
+                    컴포넌트 기반 설계를 통해 코드의 재사용성을 도모하였으며, 유연한 확장과 수정을 위한 코드 작성법을 
+                    꾸준히 고민하며 코드 리뷰 문화에 적극적으로 참여하였습니다. 
                 </div>
             </div>
 
-            <div class="h2 bold mb-8">
+            <div class="h4 bolder mb-8">
                 Spring Boot 기반 RESTful API 개발
             </div>
             <div class="mb-16">
                 <div>
-                    - Postman을 이용한 테스트 환경에서 개발
-                </div>
-                <div>
-                    - Anotation 기반 Swagger 문서 자동화
-                </div>
-                <div>
-                    - 사내 규칙에 부합하는 코드 작성으로 클린코드  문화 기여 
+                    사내 기술 스택 사용을 위해 Java Spring의 전반적인 학습을 마친 후 
+                    기존 모델의 확장과 수정을 위한 API를 제작하였습니다. 또한, 기존 API response를 일부 수정하여 
+                    임직원의 요구사항을 충족하였습니다. 
                 </div>
             </div>
 
-            <div class="h2 bold mb-8">
+            <div class="h4 bolder mb-8">
                 UI 테스트 자동화
             </div>
             <div class="mb-16">
                 <div>
-                    - Selenium을 사용하여 사용자 환경에서 인터페이스 장애 추적 
-                </div>
-                <div>
-                    - 라이브러리 메뉴얼 작성
-                </div>
-                <div>
-                    - 테스트 케이스를 공유하여 팀 차원에서의 문제 인식에 기여 
+                    Selenium을 사용하여 크롬 브라우저 환경에서의 E2E 테스트를 자동화할 수 있는 코드를 작성하였습니다. 
+                    테스트 케이스를 공유하여 팀 차원에서의 문제 인식에 기여하였고, 사내 블로그에 라이브러리 메뉴얼을 작성하였습니다. 
                 </div>
             </div>
 
-            <div class="h2 bold mb-8">
+            <div class="h4 bolder mb-8">
                 AWS 기반 CI/CD 구현
             </div>
             <div class="mb-16">
                 <div>
-                    - AWS S3으로 서버 배포 후 CloudFront를 이용한 자체 도메인 설정 
-                </div>
-                <div>
-                    - Dockerfile 작성으로 Linux 환경에 개발 서버 배포 
-                </div>
-                <div>
-                    - Bitbucket, Rundeck의 pipeline을 활용하여 운영 서버 배포 자동화와 지속적인 관리를 위한 환경 구축 
+                    AWS S3으로 운영 서버를 배포하고, CloudFront에서 자체 도메인을 설정하였습니다.
+                    도커 이미지를 생성하고 Linux 서버에 저장하고 갱신할 수 있는 Dockerfile을 작성하였습니다.
+                    Bitbucket, Rundeck의 pipeline을 이용하여 운영 서버 배포 자동화와 지속적인 관리를 위한 환경을 구축하였습니다.
                 </div>
             </div>
 
@@ -212,7 +246,7 @@
             <div class="h3 bolder text-blue">Education</div>
             <hr class="mb-16" />
 
-            <div class="h2 bold">
+            <div class="h4 bolder">
                     정보처리기사 취득
             </div>
             <div class="grey italic desc">
@@ -226,7 +260,7 @@
                 타팀 업무에 대한 이해도 쌓을 수 있었기에 더욱 효율적인 업무가 가능했습니다.
             </div>
 
-            <div class="h2 bold">
+            <div class="h4 bolder">
                 멀티캠퍼스 풀스택 웹 개발자 양성 교육 수료
             </div>
             <div class="grey italic desc">
@@ -240,7 +274,7 @@
                 또한 협업 시의 역할 배정에 대하여 배울 수 있는 기회였습니다.
             </div>
 
-            <div class="h2 bold">
+            <div class="h4 bolder">
                 부산대학교 디자인학과 졸업
             </div>
             <div class="grey italic desc">

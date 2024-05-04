@@ -24,6 +24,10 @@ body {
     font-size: 28px;
 }
 
+.h4 {
+    font-size: 21px;
+}
+
 .f-12 {
     font-size: 12px;
 }
@@ -86,13 +90,9 @@ body {
 
 .horizon {
     display: flex;
-
-    .first {
-        flex-grow: 1;
-    }
-
-    .second {
-        flex-grow: 4;
+    
+    &.row-gap {
+        gap: 5%;
     }
 }
 
@@ -141,4 +141,11 @@ hr {
 
 .read_more {
     color: #005bea;
+}
+
+.pre-style {
+    width: 6px;
+    border-radius: 3px;
+    margin: 3px 10px 0 0;
+    background-color: #005bea;
 }
